@@ -12,14 +12,18 @@ export const DropItem = ({ ...props }: DropItemProps) => {
   const [selectedUsers, setSelectedUsers] = useState<UserProps[]>([]);
   const [isHovering, setIsHovering] = useState(false);
 
-  const dropRef = useRef(null);
+  const dropRef = useRef<null | HTMLDivElement>(null);
+  const endRef = useRef<null | HTMLDivElement>(null);
 
   useDrop(dropRef, {
     onDom: (data: number, e) => {
       addToSelectedUser(data);
       setIsHovering(false);
     },
-    onDragEnter: () => setIsHovering(true),
+    onDragEnter: () => {
+      endRef.current?.scrollIntoView();
+      setIsHovering(true)
+    },
     onDragLeave: () => setIsHovering(false),
   });
 
@@ -59,6 +63,7 @@ export const DropItem = ({ ...props }: DropItemProps) => {
           </div>
         )}
       </div>
+      <div ref={endRef}></div>
     </div>
   );
 };
