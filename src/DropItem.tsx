@@ -44,7 +44,7 @@ export const DropItem = ({ ...props }: DropItemProps) => {
       })}
       style={{maxHeight: "30vh"}}
     >
-      <div className=" grid grid-cols-2 gap-3">
+      <div className=" grid grid-cols-3 gap-3">
         {selectedUsers.map((e, i) => (
           <div
             className="px-5 py-2 border border-gray-300 bg-gray-100 rounded"
