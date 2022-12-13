@@ -1,1 +1,3 @@
-# React-List-Drag-Drop
+    npm i
+    npm run dev
+

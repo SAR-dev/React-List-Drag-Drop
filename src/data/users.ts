@@ -1,0 +1,61 @@
+export const names = [
+  'Hanna Whitaker',
+  'Maribel Powell',
+  'Savannah Leach',
+  'Daniela Horne',
+  'Isabelle Villegas',
+  'Damian Potts',
+  'Whitney Bell',
+  'Kale Santos',
+  'Dallas Newman',
+  'Jensen Donovan',
+  'Adonis Velazquez',
+  'Zayne Russo',
+  'Tony Maxwell',
+  'Rihanna Wilkinson',
+  'Gabriel Sullivan',
+  'Marianna Kelley',
+  'Leilani Vazquez',
+  'Carmen Brock',
+  'Penelope Zamora',
+  'Parker Miller',
+  'Yadiel Rush',
+  'Bridger Boone',
+  'Mikayla Glass',
+  'Brody Miranda',
+  'Ruby Brandt',
+  'Haven Castro',
+  'Valentin Mosley',
+  'Margaret Reyes',
+  'Willow Duncan',
+  'Jolie Ruiz',
+  'Grady Farley',
+  'Anna Henson',
+  'Grace Gardner',
+  'Dayami Preston',
+  'Alyssa Henry',
+  'Alonso Huerta',
+  'Maritza Weeks',
+  'Danielle Rojas',
+  'Bernard Adkins',
+  'Trevon Pratt',
+  'Elvis Pineda',
+  'Tate Mora',
+  'Ansley Gilbert',
+  'Brody Daugherty',
+  'Jonathan Bruce',
+  'Dangelo Andrews',
+  'Larry Jimenez',
+  'Briana Ellis',
+  'Frederick Serrano',
+  'Ximena Graham',
+];
+
+export interface UserProps {
+  key: number;
+  value: string;
+}
+
+export const users: UserProps[] = names.map((e, i) => {
+  return { value: e, key: i };
+});
