@@ -38,8 +38,9 @@ export const DropItem = ({ ...props }: DropItemProps) => {
         'h-full p-5 overflow-y-auto': true,
         'bg-gray-100': isHovering,
       })}
+      style={{maxHeight: "30vh"}}
     >
-      <div className=" grid grid-cols-1 gap-3">
+      <div className=" grid grid-cols-2 gap-3">
         {selectedUsers.map((e, i) => (
           <div
             className="px-5 py-2 border border-gray-300 bg-gray-100 rounded"
