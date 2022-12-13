@@ -26,7 +26,7 @@ export const DragItem = ({ ...props }: DragItemProps) => {
     <div
       ref={dragRef}
       className={classnames({
-        'px-5 py-2 border border-gray-300 rounded': true,
+        'px-5 py-2 border border-gray-300 rounded cursor-move': true,
         'bg-gray-100': !dragging,
         'border-dashed bg-white': dragging,
       })}
